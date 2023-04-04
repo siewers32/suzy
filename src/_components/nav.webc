@@ -1,0 +1,32 @@
+<h1>Nav</h1>
+<div>
+    <slot name="logo">Logootje</slot>
+    <div class="links">
+        <slot name="links">
+        </slot>
+    </div>  
+</div>
+
+<style webc:scoped>
+    :host {
+        width:80%;
+        margin:auto;
+    }
+
+    div {
+        display:flex;
+        justify-content: space-between;
+        background-color:antiquewhite;
+    }
+
+    div.links {
+        display: block;
+        text-align: right;
+        background-color: aqua;
+    }
+
+    div.links a {
+        margin-right:30px;
+    }
+
+</style>

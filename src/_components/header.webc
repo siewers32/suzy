@@ -1,0 +1,8 @@
+<h1>Header</h1>
+<slot></slot>
+
+<style webc:scoped>
+    :host {
+        background-color:rgb(224, 213, 193)
+    }
+</style>

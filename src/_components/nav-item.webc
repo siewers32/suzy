@@ -1,0 +1,7 @@
+<a :href="url" @html="title">He what!!</a>
+
+<style webc:scoped>
+    a {
+        background-color:rgb(211, 176, 244)
+    }
+</style>

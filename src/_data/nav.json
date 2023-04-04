@@ -1,0 +1,26 @@
+[
+    {
+    "url": "/",
+    "name": "Home"
+    },
+    {
+    "url": "/mods/",
+    "name": "Modules"
+    },
+    {
+    "url": "/basis/introductie-codebase/",
+    "name": "Codebase"
+    },
+    {
+    "url": "/projecten/introductie-projecten/",
+    "name": "Projecten"
+    },
+    {
+    "url": "/thema/introductie/",
+    "name": "Thema"
+    },
+    {
+    "url": "/more/",
+    "name": "More.."
+    }
+]

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suzy</title>
+    <link webc:keep href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link webc:nokeep href="../_css/root.css" rel="stylesheet">
+    <link webc:nokeep href="../_css/base.css" rel="stylesheet">
+    <style @raw="getBundle('css')" webc:keep></style>
+    <style webc:keep>
+        body {
+            background-color: rgb(236, 236, 236);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div slot="links">
+                <nav-item webc:for="(k, item) in nav"  :url="url(item.url)" :title="item.name"></nav-item>
+            </div>
+        </nav>
+    </header>
+    <div @raw="content" webc:nokeep></div>
+    <script type="module" @raw="getBundle('js')" webc:keep defer></script>
+</body>
+</html>
