@@ -18,12 +18,19 @@
 <body>
     <header>
         <nav>
+            <div slot="logo">
+                <eleventy-image src="src/_assets/deltion.svg" alt="logo deltion"></eleventy-image>
+            </div>
             <div slot="links">
                 <nav-item webc:for="(k, item) in nav"  :url="url(item.url)" :title="item.name"></nav-item>
             </div>
         </nav>
     </header>
-    <div @raw="content" webc:nokeep></div>
+    <main>
+        <main-title></main-title>
+        <div @raw="content" webc:nokeep></div>
+    </main>
+    <footer></footer>
     <script type="module" @raw="getBundle('js')" webc:keep defer></script>
 </body>
 </html>

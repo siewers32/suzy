@@ -2,10 +2,9 @@
     scroll-behavior: smooth;
     --c-brand: #25255b;  
     --c-brand-light: #f58220;
-    --c-text: #1d1d67;
-    --c-text-light: #2c2c83;
     --c-code: #ffffff;
-    --c-bg: #e7e7e7;
+    --c-bg: #fbfbfb;
+    --c-header-bg: #e0e0e0;
     --fontfamily: 'Helvetica Neue', 'Arial', sans-serif;
     --codefont: 'Azeret Mono', monospace;
     --lineheight: 1.8rem;

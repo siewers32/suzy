@@ -1,0 +1,10 @@
+<h1>Footer</h1>
+<slot></slot>
+
+<style webc:scoped>
+    :host {
+        background-color:rgb(172, 170, 168);
+        width:80%;
+        margin: 0 auto 0 auto;    
+    }
+</style>

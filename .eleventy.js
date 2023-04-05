@@ -4,7 +4,7 @@ const fs = require('fs');
 const pluginWebc = require("@11ty/eleventy-plugin-webc");
 const { EleventyRenderPlugin } = require("@11ty/eleventy");
 const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
-
+const { eleventyImagePlugin } = require("@11ty/eleventy-img");
 
 module.exports = function(eleventyConfig) {
 
@@ -23,8 +23,28 @@ module.exports = function(eleventyConfig) {
     });
 
     eleventyConfig.addPlugin(pluginWebc, {
-        components: "src/_components/*.webc"
+        components: [
+            "src/_components/*.webc",
+            "npm:@11ty/eleventy-img/*.webc"
+        ]      
     });
+
+    eleventyConfig.addPlugin(eleventyImagePlugin, {
+		// Set global default options
+		formats: ["webp", "jpeg", "svg"],
+		urlPath: "/_assets/",
+        svgShortCircuit: true,
+        svgAllowUpscale: true,
+
+		// Notably `outputDir` is resolved automatically
+		// to the project output directory
+
+		defaultAttributes: {
+			loading: "lazy",
+			decoding: "async"
+		}
+	});
+
 
     eleventyConfig.addPlugin(EleventyRenderPlugin);
     eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
@@ -175,9 +195,9 @@ module.exports = function(eleventyConfig) {
  
     eleventyConfig.addPlugin(syntaxHighlight);
     
-    eleventyConfig.addPassthroughCopy("./src/_css");
-    eleventyConfig.addPassthroughCopy("./src/_assets");
-    eleventyConfig.addPassthroughCopy("./src/_js");
+    // eleventyConfig.addPassthroughCopy("./src/_css");
+    // eleventyConfig.addPassthroughCopy("./src/_assets");
+    // eleventyConfig.addPassthroughCopy("./src/_js");
     eleventyConfig.addPassthroughCopy("./manifest.json");
 
     eleventyConfig.addShortcode("video", (yt_id) => {
@@ -192,6 +212,7 @@ module.exports = function(eleventyConfig) {
     });
 
     return {
+        htmlTemplateEngine: "webc",
         pathPrefix: "/",
         dir: {
             input: "src",

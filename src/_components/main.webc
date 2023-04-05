@@ -1,0 +1,10 @@
+<slot></slot>
+
+<style webc:scoped>
+    :host {
+        width:80%;
+        min-height: calc(100vh-200px);
+        margin: 0 auto 0 auto;
+        flex-grow:1;    
+    }
+</style>

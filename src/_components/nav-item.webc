@@ -1,7 +1,17 @@
 <a :href="url" @html="title">He what!!</a>
 
 <style webc:scoped>
+    :host {
+        margin-right:30px;
+    }
+    :host:last-child {
+        margin-right:0px;
+    }
     a {
-        background-color:rgb(211, 176, 244)
+        background-color:var(--c-brand);
+        color: var(--c-bg);
+        padding:8px;
+        border-radius:4px;
+        text-decoration: none;
     }
 </style>
