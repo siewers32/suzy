@@ -1,5 +1,26 @@
 --- 
 layout: layout.webc 
 --- 
-
-<h1>HEllo</h1>
+<module-container>
+    <module>
+        <span slot="title">Basis programmeren</span>
+        <div slot="techs">
+            <tech-element color="blue">php</tech-element>
+            <tech-element>html</tech-element>
+            <tech-element>css</tech-element>
+        </div>
+    </module>
+    <module>
+        <tech-element></tech-element>
+        <tech-element></tech-element>
+        <tech-element></tech-element>
+        <tech-element></tech-element>
+    </module>
+    <module>
+        <tech-element></tech-element>
+        <tech-element></tech-element>
+        <tech-element></tech-element>
+        <tech-element></tech-element>
+    </module>
+    </module-container>
+    

@@ -1,0 +1,26 @@
+<script webc:type="js">
+  if(color) {
+      color="pink";
+  }
+  if(authors) {
+     a = authors[0].name
+  } else {
+    a = "noname"
+  }
+  `<span style=background-color:${color}>${a}</span>`;
+</script>
+
+<style webc:scoped>
+  span {
+      background-color: rgb(212, 255, 0);
+      border-radius:10px;
+      box-shadow: var(--c-box-shadow);
+      padding: 4px 10px 6px 10px;
+      line-height: 2.4rem;
+  }
+
+  span a {
+      text-decoration: none;
+      color:var(--c-brand)
+  }
+</style>

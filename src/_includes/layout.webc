@@ -27,7 +27,6 @@
         </nav>
     </header>
     <main>
-        <main-title></main-title>
         <div @raw="content" webc:nokeep></div>
     </main>
     <footer></footer>

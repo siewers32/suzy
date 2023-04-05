@@ -1,4 +1,4 @@
 ---
-layout: layout.webc
+layout: article.webc
 title: Yeah
 ---

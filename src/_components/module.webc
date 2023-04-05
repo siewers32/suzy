@@ -1,0 +1,36 @@
+<div class="container">   
+    <div class="title">
+        <slot name="title">Title</slot>
+    </div>
+    <div class="techs">
+        <slot name="techs">tech</slot>
+    </div>
+</div>
+
+<style webc:scoped>
+    :host {
+        flex: 0 0 30%; /* explanation below */
+        height: 200px;
+        width: 400px;
+        border: 1px solid var(--c-brand);
+        border-radius:8px;
+        box-shadow: var(--c-box-shadow);
+        background-color: var(--c-header-bg);
+    }
+
+    div.title {
+        font-weight: bold;
+        color: var(--c-white);
+        background-color: var(--c-brand);
+        border: 1px solid var(--c-brand);
+        height:30px;
+        border-top-right-radius:8px;
+        border-top-left-radius:8px;
+        padding:0px 8px 0px 8px;
+    }
+
+    div.techs {
+        padding:0px 8px 8px 8px;
+    }
+
+</style>
