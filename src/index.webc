@@ -1,11 +1,11 @@
---- 
-layout: layout.webc 
---- 
+---
+layout: layout.webc
+---
 <module-container>
     <module>
         <span slot="title">Basis programmeren</span>
         <div slot="techs">
-            <tech-element color="blue">php</tech-element>
+            <tech-element level="start" category="php" url=""></tech-element>
             <tech-element>html</tech-element>
             <tech-element>css</tech-element>
         </div>
@@ -22,5 +22,4 @@ layout: layout.webc
         <tech-element></tech-element>
         <tech-element></tech-element>
     </module>
-    </module-container>
-    
+</module-container>

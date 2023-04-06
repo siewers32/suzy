@@ -1,6 +1,9 @@
 :root {
     scroll-behavior: smooth;
-    --c-brand: #25255b;  
+    --c-start: rgb(139, 253, 139);
+    --c-intermediate: rgb(255, 103, 39);
+    --c-pro: rgb(44, 111, 254);
+    --c-brand: #25255b;
     --c-brand-light: #f58220;
     --c-white: #deeef3;
     --c-code: #ffffff;

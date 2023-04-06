@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,6 +16,7 @@
         }
     </style>
 </head>
+
 <body>
     <header>
         <nav>
@@ -22,7 +24,7 @@
                 <eleventy-image src="src/_assets/deltion.svg" alt="logo deltion"></eleventy-image>
             </div>
             <div slot="links">
-                <nav-item webc:for="(k, item) in nav"  :url="url(item.url)" :title="item.name"></nav-item>
+                <nav-item webc:for="(k, item) in nav" :url="url(item.url)" :title="item.name"></nav-item>
             </div>
         </nav>
     </header>
@@ -32,4 +34,5 @@
     <footer></footer>
     <script type="module" @raw="getBundle('js')" webc:keep defer></script>
 </body>
+
 </html>

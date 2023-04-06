@@ -1,0 +1,10 @@
+{
+    "layout": "layout.webc",
+    "coursetitle": "Basis PHP",
+    "title": "First page",
+    "tags": [
+        "basis-php"
+    ],
+    "permalink": "/basis-php/{{ title | slug }}/{{ page.index }}",
+    "pepper": "red"
+}

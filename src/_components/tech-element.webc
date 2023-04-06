@@ -1,26 +1,31 @@
 <script webc:type="js">
-  if(color) {
-      color="pink";
+  switch (level) {
+    case "start":
+      color = "var(--c-start)"
+      break;
+    case "intermediate":
+      color = "var(--c-intermediate)"
+      break;
+    case "pro":
+      color = "var(--c-pro)"
+      break;
+    default:
+      color = "yellow"
   }
-  if(authors) {
-     a = authors[0].name
-  } else {
-    a = "noname"
-  }
-  `<span style=background-color:${color}>${a}</span>`;
+  `<span style=background-color:${color}>${category}</span>`;
 </script>
 
 <style webc:scoped>
   span {
-      background-color: rgb(212, 255, 0);
-      border-radius:10px;
-      box-shadow: var(--c-box-shadow);
-      padding: 4px 10px 6px 10px;
-      line-height: 2.4rem;
+    background-color: rgb(212, 255, 0);
+    border-radius: 10px;
+    box-shadow: var(--c-box-shadow);
+    padding: 4px 10px 6px 10px;
+    line-height: 2.4rem;
   }
 
   span a {
-      text-decoration: none;
-      color:var(--c-brand)
+    text-decoration: none;
+    color: var(--c-brand)
   }
 </style>

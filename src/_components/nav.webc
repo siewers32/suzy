@@ -2,18 +2,19 @@
     <slot name="logo">Logootje</slot>
     <div class="links">
         <slot name="links">
+            links
         </slot>
-    </div>  
+    </div>
 </div>
 
 <style webc:scoped>
     :host {
-        width:80%;
-        margin:auto;
+        width: 80%;
+        margin: auto;
     }
 
     div {
-        display:flex;
+        display: flex;
         justify-content: space-between;
     }
 
@@ -21,5 +22,4 @@
         display: block;
         text-align: right;
     }
-
 </style>

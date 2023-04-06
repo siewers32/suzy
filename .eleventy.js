@@ -212,7 +212,6 @@ module.exports = function(eleventyConfig) {
     });
 
     return {
-        htmlTemplateEngine: "webc",
         pathPrefix: "/",
         dir: {
             input: "src",
