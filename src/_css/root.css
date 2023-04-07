@@ -1,10 +1,12 @@
 :root {
     scroll-behavior: smooth;
-    --c-start: rgb(139, 253, 139);
-    --c-intermediate: rgb(255, 103, 39);
-    --c-pro: rgb(44, 111, 254);
+    --c-green: rgb(0, 90, 0);
+    --c-orange: #f9831b;
+    --c-blue: rgb(44, 111, 254);
+    --c-yellow: rgb(254, 243, 44);
+    --c-purple: rgb(135, 44, 254);
     --c-brand: #25255b;
-    --c-brand-light: #f58220;
+    --c-brand-light: #f9831b;
     --c-white: #deeef3;
     --c-code: #ffffff;
     --c-bg: #fbfbfb;

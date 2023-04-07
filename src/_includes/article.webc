@@ -1,7 +1,12 @@
 ---
 layout: layout.webc
 ---
+
 <main-title>
-    <div slot="title">{{ title }}</div>
+    <div slot="title" @html="title"></div>
+    <p slot="category" @html="coursetitle"></p>
+    <span slot="authors" @html="getAuthors(authors,author)"></span>
+    <span slot="date" @html="getDate(date)"></span>
+
 </main-title>
 <div @raw="content" webc:nokeep></div>

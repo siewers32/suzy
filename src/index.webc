@@ -1,25 +1,30 @@
 ---
 layout: layout.webc
 ---
+<!-- green, orange, blue, yellow, purple -->
 <module-container>
     <module>
-        <span slot="title">Basis programmeren</span>
-        <div slot="techs">
-            <tech-element level="start" category="php" url=""></tech-element>
-            <tech-element>html</tech-element>
-            <tech-element>css</tech-element>
-        </div>
+        <p slot="title">Basis programmeren</p>
+        <p slot="techs">
+            <tech color="blue" title="Basis php"></tech>
+            <tech color="yellow" title="Git & Github"></tech>
+            <tech color="purple" title="Ontwikkelomgeving"></tech>
+            <tech color="green" title="Basis javascript"></tech>
+            <tech color="orange" title="Basis javascript"></tech>
+       </p>
     </module>
     <module>
-        <tech-element></tech-element>
-        <tech-element></tech-element>
-        <tech-element></tech-element>
-        <tech-element></tech-element>
+        <p slot="title">Basis webdevelopment</p>
+        <p slot="techs">
+            <tech style="background-color:var(--c-start)">php</tech>
+            <tech style="background-color:red">html</tech>
+        </p>
     </module>
     <module>
-        <tech-element></tech-element>
-        <tech-element></tech-element>
-        <tech-element></tech-element>
-        <tech-element></tech-element>
-    </module>
+        <p slot="title">Object georiënteerd programmeren</p>
+        <p slot="techs">
+            <tech style="background-color:var(--c-start)">php</tech>
+            <tech style="background-color:red">html</tech>
+        </p>
+    </module>  
 </module-container>

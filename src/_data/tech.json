@@ -1,0 +1,181 @@
+[
+    {
+      "key": "php",
+      "name": "Programmeren met php",
+	  "color": "var(--c-tech-test)"
+    },
+	{
+      "key": "python",
+      "name": "Programmeren met python",
+	  "color": "var(--c-tech-test)"
+    },
+	{
+      "key": "ux",
+      "name": "User experience design",
+	  "color": "var(--c-tech-test)"
+    },
+	{
+      "key": "ui",
+      "name": "User interface design",
+	  "color": "var(--c-tech-test)"
+    },
+	{
+      "key": "unity3d",
+      "name": "Unity 3D",
+	  "color": "var(--c-tech-test)"
+    },
+	{
+      "key": "html",
+      "name": "Webpagina's structureren met HTML",
+	  "color": "var(--c-tech-test)"
+    },
+	{
+      "key": "srv",
+      "name": "Installeren en configureren van een webserver met virtual hosts, ssh, git en meer.",
+	  "color": "var(--c-tech-test)"
+    },
+	{
+      "key": "cms",
+      "name": "Installeren, configureren, vormgeven van een content management systeem (bijv. Wordpress)",
+	  "color": "var(--c-tech-test)"
+    },
+	{
+      "key": "webshop",
+      "name": "Installeren, configureren, vormgeven van een webshop op basis van een content management systeem (bijv. WooCommerce)",
+	  "color": "var(--c-tech-test)"
+    },
+	{
+      "key": "vue",
+      "name": "Vue",
+	  "color": "var(--c-tech-test)"
+    },
+	{
+      "key": "npm",
+      "name": "Node.js en node package manager",
+	  "color": "var(--c-tech-test)"
+    },
+	{
+      "key": "git",
+      "name": "Versiebeheer met Git en github",
+	  "color": "var(--c-tech-test)"
+    },
+	{
+      "key": "oop",
+      "name": "Object georiënteerd applicaties programmeren.",
+	  "color": "var(--c-tech-test)"
+    },
+	{
+      "key": "mvc",
+      "name": "Volgens MVC principes een applicatie bouwen.",
+	  "color": "var(--c-tech-test)"
+    },
+	{
+      "key": "owasp",
+      "name": "Security toepassen op basis van de top-10 van het Open worldwide application security project (OWASP)",
+	  "color": "var(--c-tech-test)"
+    },
+	{
+      "key": "ssd",
+      "name": "Security by design volgens de methode van secure software development (SSD)",
+	  "color": "var(--c-tech-test)"
+    },
+	{
+      "key": "erd",
+      "name": "Technisch ontwerpen van een database",
+	  "color": "var(--c-tech-test)"
+    },
+	{
+      "key": "pwa",
+      "name": "Progressive webapps",
+	  "color": "var(--c-tech-test)"
+    },
+	{
+      "key": "ide",
+      "name": "Installeren van een integrated development environment (IDE = ontwikkelomgeving)",
+	  "color": "var(--c-tech-test)"
+    },
+	{
+      "key": "hosting",
+      "name": "Applicaties publiceren op internet (hosting)",
+	  "color": "var(--c-tech-test)"
+    },
+	{
+      "key": "seo",
+      "name": "Optimaliseren van de vindbaarheid van webistes door zoekmachines",
+	  "color": "var(--c-tech-test)"
+    },
+	{
+      "key": "css",
+      "name": "Websites en webapps vormgeven met CSS",
+	  "color": "var(--c-tech-test)"
+    },
+	{
+      "key": "csharp",
+      "name": "Ontwikkelen in C#",
+	  "color": "var(--c-tech-test)"
+    },
+	{
+      "key": "react",
+      "name": "React",
+	  "color": "var(--c-tech-test)"
+    },
+	{
+      "key": "reactn",
+      "name": "React Native",
+	  "color": "var(--c-tech-test)"
+    },
+	{
+      "key": "js",
+      "name": "Programmeren met javascript en het document object model",
+	  "color": "var(--c-tech-test)"
+    },
+	{
+      "key": "scrum",
+      "name": "Samenwerken volgens scrum-methodiek",
+	  "color": "var(--c-tech-test)"
+    },
+	{
+      "key": "design",
+      "name": "Functionele en technische ontwerpen begrijpen en omzetten in een werkend product",
+	  "color": "var(--c-tech-test)"
+    },
+	{
+      "key": "uml",
+      "name": "Technisch ontwerpen op basis van de Unified modelling language (UML)",
+	  "color": "var(--c-tech-test)"
+    },
+	{
+      "key": "all",
+      "name": "Alle programmeertalen",
+	  "color": "var(--c-tech-test)"
+    },
+	{
+      "key": "database",
+      "name": "Database queries en data manipulatie (CRUD)",
+	  "color": "var(--c-tech-test)"
+    },
+	{
+      "key": "testen",
+      "name": "Testen",
+	  "color": "var(--c-tech-test)"
+    },
+	{
+      "key": "api",
+      "name": "Webservices/api",
+	  "color": "var(--c-tech-test)"
+    },
+	{
+      "key": "codebase",
+      "name": "Eenvoudige programma's ontwikkelen in een willekeurige programmeertaal (codebase)",
+	  "color": "var(--c-tech-test)"
+    },
+	{
+      "key": "arduino",
+      "name": "Arduino programmeren",
+	  "color": "var(--c-tech-test)"
+    },
+	{
+      "key": "content",
+      "name": "Content beheren in een CMS"
+    }
+  ]

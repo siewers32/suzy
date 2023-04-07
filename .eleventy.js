@@ -5,6 +5,7 @@ const pluginWebc = require("@11ty/eleventy-plugin-webc");
 const { EleventyRenderPlugin } = require("@11ty/eleventy");
 const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 const { eleventyImagePlugin } = require("@11ty/eleventy-img");
+const { DateTime } = require("luxon")
 
 module.exports = function(eleventyConfig) {
 
@@ -173,6 +174,10 @@ module.exports = function(eleventyConfig) {
         return `/_assets/${color}_pepper.svg`;
     });
 
+    eleventyConfig.addFilter("getDate", function(dateObj) {
+        return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
+    })
+
     eleventyConfig.addFilter("dir", function(url){
         parts = url.split('/')
         let mypath = ""
@@ -187,11 +192,6 @@ module.exports = function(eleventyConfig) {
         return `<img src="${url}" alt="${alt}" style="width:${size}%;">`;  
     })
 
-    eleventyConfig.addFilter("author", function(date, name){
-        return `<div class="author">${name} | ${date}</div>`;
-        
-    })
- 
  
     eleventyConfig.addPlugin(syntaxHighlight);
     

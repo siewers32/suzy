@@ -1,0 +1,43 @@
+<script webc:type="js">
+  switch (color) {
+    case "blue":
+      color = "var(--c-blue)"
+      text = "#fff"
+      break;
+    case "yellow":
+      color = "var(--c-yellow)"
+      text = "var(--c-brand)"
+      break;
+    case "green":
+      color = "var(--c-green)"
+      text = "#fff"
+      break;
+    case "purple":
+      color = "var(--c-purple)"
+      text = "#fff"
+      break;
+    case "orange":
+      color = "var(--c-orange)"
+      text = "#fff"
+      break;
+    default:
+      color = "var(--c-blue)"
+      text = "#fff"
+  }
+  `<span style=background-color:${color};><a style="color:${text}" href="${slug(title)}/introductie/">${title}</a></span>`;
+</script>
+
+<style webc:scoped>
+  span {
+    font-size:0.8rem;
+    border-radius: 10px;
+    box-shadow: var(--c-box-shadow);
+    padding: 4px 10px 6px 10px;
+    line-height: 2.4rem;
+  }
+
+  span a {
+    text-decoration: none;
+    color: var(--c-brand)
+  }
+</style>
