@@ -1,17 +1,24 @@
-<div class="category">
-    <slot name="category">Frontend</slot>
-</div>
-<div class="authors">
-    <slot name="authors">Jan Jaap Siewers</slot> |
-    <slot name="date">Mar, 2023</slot>
-</div>
-<div class="title">
-    <h1>
-        <slot name="title">Title</slot>
-    </h1>
+<div class="template">
+    <div class="category">
+        <slot name="category">Frontend</slot>
+    </div>
+    <div class="authors">
+        <slot name="authors">Jan Jaap Siewers</slot> |
+        <slot name="date">Mar, 2023</slot>
+    </div>
+    <div class="title">
+        <h1>
+            <slot name="title">Title</slot>
+        </h1>
+    </div>
 </div>
 
 <style>
+    div.template {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
     div.category {
         border-bottom: 1px solid var(--c-brand);
         font-weight: bold;
@@ -21,6 +28,4 @@
         text-align: right;
         font-style: italic;
     }
-
-    div.title {}
 </style>
