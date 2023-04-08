@@ -1,26 +1,14 @@
 [
     {
-    "url": "/",
-    "name": "Home"
-    },
-    {
-    "url": "/mods/",
+    "url": "/modules/introductie/",
     "name": "Modules"
     },
     {
-    "url": "/basis/introductie-codebase/",
-    "name": "Codebase"
-    },
-    {
-    "url": "/projecten/introductie-projecten/",
+    "url": "/auteurs/introductie/",
     "name": "Projecten"
     },
     {
     "url": "/thema/introductie/",
     "name": "Thema"
-    },
-    {
-    "url": "/more/",
-    "name": "More.."
     }
 ]

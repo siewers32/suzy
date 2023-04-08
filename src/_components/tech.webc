@@ -29,7 +29,7 @@
 
 <style webc:scoped>
   span {
-    font-size:0.8rem;
+    font-size:0.9rem;
     border-radius: 10px;
     box-shadow: var(--c-box-shadow);
     padding: 4px 10px 6px 10px;
@@ -38,6 +38,7 @@
 
   span a {
     text-decoration: none;
-    color: var(--c-brand)
+    color: var(--c-brand);
+    white-space: nowrap;
   }
 </style>

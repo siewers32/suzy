@@ -10,13 +10,7 @@
     <link webc:nokeep href="../_css/root.css" rel="stylesheet">
     <link webc:nokeep href="../_css/base.css" rel="stylesheet">
     <style @raw="getBundle('css')" webc:keep></style>
-    <style webc:keep>
-        body {
-            background-color: rgb(236, 236, 236);
-        }
-    </style>
 </head>
-
 <body>
     <header>
         <nav>

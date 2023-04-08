@@ -7,6 +7,5 @@ layout: layout.webc
     <p slot="category" @html="coursetitle"></p>
     <span slot="authors" @html="getAuthors(authors,author)"></span>
     <span slot="date" @html="getDate(date)"></span>
-
 </main-title>
 <div @raw="content" webc:nokeep></div>
