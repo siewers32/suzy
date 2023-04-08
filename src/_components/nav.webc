@@ -1,5 +1,5 @@
 <div>
-    <slot name="logo">Logootje</slot>
+    <a href="/"><slot name="logo">Logootje</slot></a>
     <div class="links">
         <slot name="links">
             links

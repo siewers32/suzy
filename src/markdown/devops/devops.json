@@ -1,0 +1,6 @@
+{
+	"layout":"article.webc",
+	"tags":"devops",
+	"coursetitle":"DevOps",
+	"permalink":"/devops/{{ title | slugify }}/{{ page.index }}"
+}

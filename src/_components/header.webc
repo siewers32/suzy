@@ -3,7 +3,7 @@
 <style webc:scoped>
     :host {
         padding-top:20px;
-        padding-bottom:20px;
+        padding-bottom:2rem;
         background-color:var(--c-header-bg);
         box-shadow: var(--c-box-shadow);
     }

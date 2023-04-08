@@ -1,7 +1,5 @@
 ---
 title: Introductie
 author: jsiewers
-date: 2023-04-05
+date: 2023-04-08
 ---
-
-## What

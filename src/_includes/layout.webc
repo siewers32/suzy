@@ -6,11 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suzy</title>
+    <link webc:keep rel="icon" :href=url("_assets/favicon.ico") sizes="any"><!-- 32×32 -->
+    <link rel="icon" :href=url("_assets/icon.svg") type="image/svg+xml">
+    <link rel="apple-touch-icon" :href=url("_assets/apple-touch-icon.png")><!-- 180×180 -->
+    <link rel="manifest" href=url("/manifest.webmanifest")>
     <link webc:keep href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link webc:nokeep href="../_css/root.css" rel="stylesheet">
     <link webc:nokeep href="../_css/base.css" rel="stylesheet">
+    <link webc:nokeep href="../_css/text.css" rel="stylesheet">
+    <link webc:nokeep href="../_css/prism.css" rel="stylesheet">
+    <link webc:nokeep href="../_css/code.css" rel="stylesheet">
     <style @raw="getBundle('css')" webc:keep></style>
 </head>
+
 <body>
     <header>
         <nav>
@@ -18,7 +26,9 @@
                 <eleventy-image src="src/_assets/deltion.svg" alt="logo deltion"></eleventy-image>
             </div>
             <div slot="links">
-                <nav-item webc:for="(k, item) in nav" :url="url(item.url)" :title="item.name"></nav-item>
+                <span webc:if></span>
+                <nav-item webc:for="(k, item) in nav" :url="url(item.url)" :title="item.name"
+                    :selected="getNavClass(item.url, page.url)"></nav-item>
             </div>
         </nav>
     </header>

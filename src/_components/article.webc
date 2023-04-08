@@ -1,4 +1,0 @@
-
-<main-title>
-    <div slot="title">{{ title }}</div>
-</main-title>

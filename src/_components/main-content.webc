@@ -1,0 +1,19 @@
+<div class="wrapper">
+    <div class="sidebar">
+        <slot name="sidebar"></slot>
+    </div>
+    <div><slot name="content"></slot></div>    
+</div>
+
+
+<style>
+    div.wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    div.sidebar {
+        width: 440px;
+
+    }
+</style>

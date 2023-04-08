@@ -1,14 +1,14 @@
 [
     {
-    "url": "/modules/introductie/",
-    "name": "Modules"
+        "url": "/",
+        "name": "Modules"
     },
     {
-    "url": "/auteurs/introductie/",
-    "name": "Projecten"
+        "url": "/authors/",
+        "name": "Auteurs"
     },
     {
-    "url": "/thema/introductie/",
-    "name": "Thema"
+        "url": "/thema/introductie/",
+        "name": "Thema"
     }
 ]

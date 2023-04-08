@@ -30,6 +30,7 @@ module.exports = function(eleventyConfig) {
         ]      
     });
 
+
     eleventyConfig.addPlugin(eleventyImagePlugin, {
 		// Set global default options
 		formats: ["webp", "jpeg", "svg"],
@@ -178,6 +179,14 @@ module.exports = function(eleventyConfig) {
         return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
     })
 
+    eleventyConfig.addFilter("getNavClass", function(item, page) {
+        if( item == page ) {
+            return "selected"
+        } else {
+            return "notselected"
+        }
+    })
+
     eleventyConfig.addFilter("dir", function(url){
         parts = url.split('/')
         let mypath = ""
@@ -198,7 +207,12 @@ module.exports = function(eleventyConfig) {
     // eleventyConfig.addPassthroughCopy("./src/_css");
     // eleventyConfig.addPassthroughCopy("./src/_assets");
     // eleventyConfig.addPassthroughCopy("./src/_js");
-    eleventyConfig.addPassthroughCopy("./manifest.json");
+    eleventyConfig.addPassthroughCopy("./manifest.webmaifest");
+    eleventyConfig.addPassthroughCopy("./src/_assets/favicon.ico");
+    eleventyConfig.addPassthroughCopy("./src/_assets/apple-touch-icon.png");
+    eleventyConfig.addPassthroughCopy("./src/_assets/192.png");
+    eleventyConfig.addPassthroughCopy("./src/_assets/512.png");
+    eleventyConfig.addPassthroughCopy("./src/_assets/icon.svg");
 
     eleventyConfig.addShortcode("video", (yt_id) => {
         const filePath = path.join(__dirname, "./src/_includes/video.njk");

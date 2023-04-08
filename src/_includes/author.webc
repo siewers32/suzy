@@ -1,0 +1,13 @@
+---
+layout: layout.webc
+---
+
+<h1 @html="author.name"></h1>
+
+<author-content>
+    <author-doc webc:for="item of getPostsByAuthor(collections.all, author.key)" :url="item.url"
+        :title="item.data.title" :course="item.data.coursetitle"></author-doc>
+</author-content>
+
+<div @raw="content" webc:nokeep></div>
+

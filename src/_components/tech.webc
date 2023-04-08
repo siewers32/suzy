@@ -24,12 +24,12 @@
       color = "var(--c-blue)"
       text = "#fff"
   }
-  `<span style=background-color:${color};><a style="color:${text}" href="${slug(title)}/introductie/">${title}</a></span>`;
+  `<span style=background-color:${color};><a style="color:${text}" href="${slugify(title)}/introductie/">${title}</a></span>`;
 </script>
 
 <style webc:scoped>
   span {
-    font-size:0.9rem;
+    font-size: 0.9rem;
     border-radius: 10px;
     box-shadow: var(--c-box-shadow);
     padding: 4px 10px 6px 10px;

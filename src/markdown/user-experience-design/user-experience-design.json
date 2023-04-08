@@ -1,0 +1,6 @@
+{
+	"layout":"article.webc",
+	"tags":"user-experience-design",
+	"coursetitle":"User experience design",
+	"permalink":"/user-experience-design/{{ title | slugify }}/{{ page.index }}"
+}

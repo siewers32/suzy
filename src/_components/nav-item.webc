@@ -1,17 +1,29 @@
-<a :href="url" @html="title">He what!!</a>
+<script webc:type="js">
+    text = "purple";
+    `<a class="${selected}" href="${url}">${title}</a>`;
+</script>
 
 <style webc:scoped>
     :host {
-        margin-right:30px;
+        margin-right: 30px;
     }
+
     :host:last-child {
-        margin-right:0px;
+        margin-right: 0px;
     }
-    a {
-        background-color:var(--c-brand);
+
+    .notselected {
+        color: var(--c-brand);
+        padding: 8px;
+        border-radius: 4px;
+        text-decoration: none;
+    }
+
+    .selected {
+        background-color: var(--c-brand);
         color: var(--c-bg);
-        padding:8px;
-        border-radius:4px;
+        padding: 8px;
+        border-radius: 4px;
         text-decoration: none;
     }
 </style>

@@ -1,8 +1,0 @@
-{
-    "layout": "article.webc",
-    "coursetitle": "Basis PHP",
-    "tags": [
-        "basis-php"
-    ],
-    "permalink": "/basis-php/{{ title | slug }}/{{ page.index }}"
-}

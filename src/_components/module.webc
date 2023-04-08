@@ -1,5 +1,7 @@
-<div class="container">   
-    <div class="title"><slot name="title">test</slot></div>
+<div class="container">
+    <div class="title">
+        <slot name="title">test</slot>
+    </div>
     <div class="techs">
         <slot name="techs">tech</slot>
     </div>
@@ -17,18 +19,18 @@
         border-radius: 8px;
         box-shadow: var(--c-box-shadow);
         background-color: var(--c-header-bg);
-        margin-top:2rem;
+        margin-top: 2rem;
+        overflow:hidden;
     }
 
     div.title {
         font-weight: bold;
         color: var(--c-white);
         background-color: var(--c-brand);
-        border: 1px solid var(--c-brand);
         height: 30px;
-        border-top-right-radius: 8px;
-        border-top-left-radius: 8px;
         padding: 0px 8px 0px 8px;
+        white-space: nowrap;
+        overflow: hidden;
     }
 
     div.techs {

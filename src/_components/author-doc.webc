@@ -1,0 +1,15 @@
+<script webc:type="js">
+    `<li><a href="${url}">${course} - ${title}</a></li>`
+</script>
+
+<style webc:scoped>
+    :host {
+        list-style-type: none;
+    }
+
+    li a {
+        text-decoration: none;
+        color: var(--c-brand);
+    }
+
+</style>

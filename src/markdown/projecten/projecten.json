@@ -1,0 +1,6 @@
+{
+	"layout":"article.webc",
+	"tags":"projecten",
+	"coursetitle":"Projecten",
+	"permalink":"/projecten/{{ title | slugify }}/{{ page.index }}"
+}

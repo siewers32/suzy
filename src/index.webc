@@ -7,11 +7,11 @@ layout: layout.webc
         <p slot="title">Basis programmeren</p>
         <p slot="techs">
             <tech color="purple" title="Ontwikkelomgeving"></tech>
-            <tech color="purple" title="Git & Github"></tech>
+            <tech color="purple" title="Git en Github"></tech>
             <tech color="blue" title="Codebase"></tech>
             <tech color="blue" title="Basis php"></tech>
             <tech color="blue" title="Python"></tech>
-       </p>
+        </p>
     </module>
     <module>
         <p slot="title">Basis webdevelopment</p>
@@ -21,7 +21,7 @@ layout: layout.webc
             <tech color="green" title="Basis javascript"></tech>
             <tech color="green" title="Vue (cdn)"></tech>
             <tech color="yellow" title="User interfaces design"></tech>
-       </p>
+        </p>
     </module>
     <module>
         <p slot="title">Frontend development</p>
@@ -29,22 +29,23 @@ layout: layout.webc
             <tech color="green" title="Webcomponents"></tech>
             <tech color="green" title="Vue (npm)"></tech>
             <tech color="pink" title="React Native"></tech>
-            <tech color="yellow" title="User experience design"></tech>       </p>
+            <tech color="yellow" title="User experience design"></tech>
+        </p>
     </module>
     <module>
-        <p slot="title">Object georiënteerd programmeren (OOP)</p>
+        <p slot="title">Object georiënteerd programmeren</p>
         <p slot="techs">
             <tech color="blue" title="OO PHP"></tech>
             <tech color="blue" title="C#"></tech>
         </p>
-    </module>     
+    </module>
     <module>
         <p slot="title">Frameworks (MVC) en API</p>
         <p slot="techs">
             <tech color="blue" title="Laravel"></tech>
             <tech color="green" title="NodeJS"></tech>
         </p>
-    </module>     
+    </module>
     <module>
         <p slot="title">Ontwerpen en samenwerken</p>
         <p slot="techs">
@@ -53,6 +54,13 @@ layout: layout.webc
             <tech color="purple" title="DevOps"></tech>
             <tech color="purple" title="Projecten"></tech>
         </p>
-    </module>  
-</module-container>
+    </module>
+    <module>
+        <p slot="title">Keuzedelen</p>
+        <p slot="techs">
+            <tech color="yellow" title="Verdieping Software"></tech>
+            <tech color="yellow" title="Oriëntatie Blockchain"></tech>
+        </p>
+    </module>
 
+</module-container>

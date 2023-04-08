@@ -1,0 +1,27 @@
+pre {
+    white-space: pre;
+    overflow: auto;
+    background-color: #ffffff;
+    border: 1px solid var(--c-text);
+    padding: 5px;
+}
+
+code {
+    border-radius: 4px;
+    background-color:var(--c-code);
+    padding-left:0.2rem;
+    padding-right:0.2rem;
+}
+div.html {
+    background-color: var(--c-bg);
+    padding:16px;
+    border-radius: 4px;
+}
+
+div.html table td, div.html table th {
+    border:1px solid var(--c-text);
+    padding: 4px;
+}
+div.html table {
+    border-collapse:collapse;
+}

@@ -19,3 +19,8 @@ body {
     line-height: var(--lineheight);
     background-color: var(--c-bg-light);
 }
+
+a {
+    text-decoration: none;
+    color: var(--c-brand);
+}

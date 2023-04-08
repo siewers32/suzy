@@ -1,0 +1,6 @@
+{
+	"layout":"article.webc",
+	"tags":"basis-javascript",
+	"coursetitle":"Basis Javascript",
+	"permalink":"/basis-javascript/{{ title | slugify }}/{{ page.index }}"
+}
