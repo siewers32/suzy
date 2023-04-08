@@ -2,18 +2,21 @@
     <div class="sidebar">
         <slot name="sidebar"></slot>
     </div>
-    <div><slot name="content"></slot></div>    
+    <div class="content"><slot name="content"></slot></div>    
 </div>
 
 
 <style>
     div.wrapper {
         display: flex;
-        justify-content: space-between;
+        justify-content:flex-start;
     }
 
     div.sidebar {
-        width: 440px;
+        width:300px;
+    }
 
+    div.content {
+        width:100%
     }
 </style>
