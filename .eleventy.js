@@ -179,6 +179,10 @@ module.exports = function(eleventyConfig) {
         return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
     })
 
+    eleventyConfig.addFilter("getYear", function() {
+        return DateTime.now().toFormat('yyyy')
+    });
+
     eleventyConfig.addFilter("getNavClass", function(item, page) {
         if( item == page ) {
             return "selected"

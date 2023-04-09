@@ -35,7 +35,12 @@
     <main>
         <div @raw="content" webc:nokeep></div>
     </main>
-    <footer></footer>
+    <footer>
+        <eleventy-image slot="cc" src="src/_assets/cc-by-nc.png" alt="logo deltion"></eleventy-image>
+        <p slot="copy"><span @html="getYear()"></span> &copy Deltion ICT - Software Development<br>
+            Dit werk valt onder een <a href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Naamsvermelding - NietCommercieel 4.0 internationaal-licentie</a>.
+        </p>
+    </footer>
     <script type="module" @raw="getBundle('js')" webc:keep defer></script>
 </body>
 
