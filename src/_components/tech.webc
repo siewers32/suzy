@@ -1,4 +1,5 @@
 <script webc:type="js">
+  myhref = url('/subjects/' + slugify(title) + '/introductie/')
   switch (color) {
     case "blue":
       color = "var(--c-blue)"
@@ -20,11 +21,19 @@
       color = "var(--c-orange)"
       text = "#fff"
       break;
+    case "pink":
+      color = "var(--c-pink)"
+      text = "#fff"
+      break;
+    case "grey":
+      color = "var(--c-grey)"
+      text = "#fff"
+      break;
     default:
       color = "var(--c-blue)"
       text = "#fff"
   }
-  `<span style=background-color:${color};><a style="color:${text}" href="${slugify(title)}/introductie/">${title}</a></span>`;
+  `<span style=background-color:${color};><a style="color:${text}" href=${myhref}>${title}</a><slot></slot></span>`;
 </script>
 
 <style webc:scoped>
@@ -34,11 +43,19 @@
     box-shadow: var(--c-box-shadow);
     padding: 4px 10px 6px 10px;
     line-height: 2.4rem;
+    white-space: nowrap;
   }
 
   span a {
     text-decoration: none;
     color: var(--c-brand);
-    white-space: nowrap;
+  }
+
+  span img {
+    position: relative;
+    top: 5px;
+    left: 4px;
+    width: 18px;
+    height: 18px;
   }
 </style>

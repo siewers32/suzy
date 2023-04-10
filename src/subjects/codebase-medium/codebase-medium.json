@@ -1,0 +1,6 @@
+{
+	"layout":"assignment.webc",
+	"tags":"codebase-medium",
+	"coursetitle":"Codebase medium",
+	"permalink":"/subjects/codebase-medium/{{ title | slugify }}/{{ page.index }}"
+}

@@ -1,6 +1,0 @@
-{
-	"layout":"article.webc",
-	"tags":"user-interfaces-design",
-	"coursetitle":"User interfaces design",
-	"permalink":"/user-interfaces-design/{{ title | slugify }}/{{ page.index }}"
-}

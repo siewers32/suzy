@@ -1,0 +1,6 @@
+{
+	"layout":"assignment.webc",
+	"tags":"webcomponents",
+	"coursetitle":"Webcomponents",
+	"permalink":"/subjects/webcomponents/{{ title | slugify }}/{{ page.index }}"
+}

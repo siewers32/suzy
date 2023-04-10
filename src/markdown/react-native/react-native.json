@@ -1,6 +1,0 @@
-{
-	"layout":"article.webc",
-	"tags":"react-native",
-	"coursetitle":"React Native",
-	"permalink":"/react-native/{{ title | slugify }}/{{ page.index }}"
-}

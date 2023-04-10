@@ -34,7 +34,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPlugin(eleventyImagePlugin, {
 		// Set global default options
 		formats: ["webp", "jpeg", "svg"],
-		urlPath: "/_assets/",
+		urlPath: "/_assets/_generated/",
         svgShortCircuit: true,
         svgAllowUpscale: true,
 
@@ -183,8 +183,10 @@ module.exports = function(eleventyConfig) {
         return DateTime.now().toFormat('yyyy')
     });
 
-    eleventyConfig.addFilter("getNavClass", function(item, page) {
-        if( item == page ) {
+    eleventyConfig.addFilter("getNavClass", function(items, page) {
+        // Navigatiebutton is 'selected' als deel van pad nav.selected gelijk is aan pagina-url
+        selected = items.filter(i => page.includes(i) && i.length > 1)
+        if(selected.length > 0 || page == items[0]) { // uitzondering voor "/"
             return "selected"
         } else {
             return "notselected"
@@ -209,14 +211,10 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPlugin(syntaxHighlight);
     
     // eleventyConfig.addPassthroughCopy("./src/_css");
-    // eleventyConfig.addPassthroughCopy("./src/_assets");
+    eleventyConfig.addPassthroughCopy("./src/_assets");
     // eleventyConfig.addPassthroughCopy("./src/_js");
-    eleventyConfig.addPassthroughCopy("./manifest.webmaifest");
-    eleventyConfig.addPassthroughCopy("./src/_assets/favicon.ico");
-    eleventyConfig.addPassthroughCopy("./src/_assets/apple-touch-icon.png");
-    eleventyConfig.addPassthroughCopy("./src/_assets/192.png");
-    eleventyConfig.addPassthroughCopy("./src/_assets/512.png");
-    eleventyConfig.addPassthroughCopy("./src/_assets/icon.svg");
+    eleventyConfig.addPassthroughCopy("./manifest.webmanifest");
+    eleventyConfig.addPassthroughCopy("./src/_assets/_system");
 
     eleventyConfig.addShortcode("video", (yt_id) => {
         const filePath = path.join(__dirname, "./src/_includes/video.njk");

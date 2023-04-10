@@ -6,10 +6,11 @@
     --c-yellow: rgb(254, 243, 44);
     --c-purple: rgb(135, 44, 254);
     --c-pink: rgb(254, 44, 208);
+    --c-grey: rgb(154, 154, 154);
     --c-brand: #25255b;
     --c-brand-light: #f9831b;
     --c-white: #deeef3;
-    --c-code: rgb(202, 221, 252);
+    --c-code: rgb(213, 229, 254);
     --c-bg: #ededed;
     --c-header-bg: #e0e0e0;
     --fontfamily: 'Helvetica Neue', 'Arial', sans-serif;

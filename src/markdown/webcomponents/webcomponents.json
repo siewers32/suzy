@@ -1,6 +1,0 @@
-{
-	"layout":"article.webc",
-	"tags":"webcomponents",
-	"coursetitle":"Webcomponents",
-	"permalink":"/webcomponents/{{ title | slugify }}/{{ page.index }}"
-}

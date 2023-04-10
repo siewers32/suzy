@@ -1,6 +1,0 @@
-{
-	"layout":"article.webc",
-	"tags":"oo-php",
-	"coursetitle":"OO-php",
-	"permalink":"/oo-php/{{ title | slugify }}/{{ page.index }}"
-}

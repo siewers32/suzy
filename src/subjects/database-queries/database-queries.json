@@ -1,0 +1,6 @@
+{
+	"layout":"assignment.webc",
+	"tags":"database-queries",
+	"coursetitle":"Database queries",
+	"permalink":"/subjects/database-queries/{{ title | slugify }}/{{ page.index }}"
+}

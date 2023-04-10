@@ -1,0 +1,6 @@
+{
+	"layout":"assignment.webc",
+	"tags":"codebase-expert",
+	"coursetitle":"Codebase expert",
+	"permalink":"/subjects/codebase-expert/{{ title | slugify }}/{{ page.index }}"
+}

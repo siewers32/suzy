@@ -1,0 +1,6 @@
+{
+	"layout":"assignment.webc",
+	"tags":"verdieping-software",
+	"coursetitle":"Verdieping Software",
+	"permalink":"/subjects/verdieping-software/{{ title | slugify }}/{{ page.index }}"
+}

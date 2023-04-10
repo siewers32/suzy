@@ -1,6 +1,0 @@
-{
-	"layout":"article.webc",
-	"tags":"vue-cdn",
-	"coursetitle":"Vue-(cdn)",
-	"permalink":"/vue-cdn/{{ title | slugify }}/{{ page.index }}"
-}

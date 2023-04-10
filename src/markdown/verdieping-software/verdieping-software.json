@@ -1,6 +1,0 @@
-{
-	"layout":"article.webc",
-	"tags":"verdieping-software",
-	"coursetitle":"Verdieping Software",
-	"permalink":"/verdieping-software/{{ title | slugify }}/{{ page.index }}"
-}

@@ -1,10 +1,17 @@
 [
     {
         "url": "/",
+        "selected": [
+            "/",
+            "/subjects/"
+        ],
         "name": "Modules"
     },
     {
         "url": "/authors/",
+        "selected": [
+            "/authors/"
+        ],
         "name": "Auteurs"
     }
 ]

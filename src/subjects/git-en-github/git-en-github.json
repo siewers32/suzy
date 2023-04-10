@@ -1,0 +1,6 @@
+{
+	"layout":"assignment.webc",
+	"tags":"git-en-github",
+	"coursetitle":"Git en Github",
+	"permalink":"/subjects/git-en-github/{{ title | slugify }}/{{ page.index }}"
+}

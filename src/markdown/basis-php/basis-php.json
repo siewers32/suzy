@@ -1,6 +1,0 @@
-{
-	"layout":"article.webc",
-	"tags":"basis-php",
-	"coursetitle":"Basis php",
-	"permalink":"/basis-php/{{ title | slugify }}/{{ page.index }}"
-}

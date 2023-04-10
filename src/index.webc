@@ -2,15 +2,18 @@
 layout: layout.webc
 ---
 <!-- green, orange, blue, yellow, purple -->
+
 <module-container>
     <module>
         <p slot="title">Basis programmeren</p>
         <p slot="techs">
             <tech color="purple" title="Ontwikkelomgeving"></tech>
             <tech color="purple" title="Git en Github"></tech>
-            <tech color="blue" title="Codebase"></tech>
+            <tech color="grey" title="Codebase easy"><img webc:is="eleventy-image" src='./src/_assets/red_pepper.svg'
+                    alt='red pepper'></tech>
             <tech color="blue" title="Basis php"></tech>
             <tech color="blue" title="Python"></tech>
+            <tech color="blue" title="Database queries"></tech>
         </p>
     </module>
     <module>

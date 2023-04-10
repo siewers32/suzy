@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suzy</title>
-    <link webc:keep rel="icon" :href=url("_assets/favicon.ico") sizes="any"><!-- 32×32 -->
-    <link rel="icon" :href=url("_assets/icon.svg") type="image/svg+xml">
-    <link rel="apple-touch-icon" :href=url("_assets/apple-touch-icon.png")><!-- 180×180 -->
-    <link rel="manifest" href=url("/manifest.webmanifest")>
+    <link webc:keep rel="icon" :href=url("/_system/favicon.ico") sizes="any"><!-- 32×32 -->
+    <link rel="icon" :href=url("/_system/icon.svg") type="image/svg+xml">
+    <link rel="apple-touch-icon" :href=url("/_system/apple-touch-icon.png")><!-- 180×180 -->
+    <link rel="manifest" :href=url("/manifest.webmanifest")>
     <link webc:keep href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link webc:nokeep href="../_css/root.css" rel="stylesheet">
     <link webc:nokeep href="../_css/base.css" rel="stylesheet">
@@ -23,12 +23,12 @@
     <header>
         <nav>
             <div slot="logo">
-                <eleventy-image src="src/_assets/deltion.svg" alt="logo deltion"></eleventy-image>
+                <eleventy-image src="./src/_system/deltion.svg" alt="logo deltion"></eleventy-image>
             </div>
             <div slot="links">
                 <span webc:if></span>
                 <nav-item webc:for="(k, item) in nav" :url="url(item.url)" :title="item.name"
-                    :selected="getNavClass(item.url, page.url)"></nav-item>
+                    :selected="getNavClass(item.selected, page.url)"></nav-item>
             </div>
         </nav>
     </header>
@@ -36,9 +36,10 @@
         <div @raw="content" webc:nokeep></div>
     </main>
     <footer>
-        <eleventy-image slot="cc" src="src/_assets/cc-by-nc.png" alt="logo deltion"></eleventy-image>
+        <eleventy-image slot="cc" src="./src/_system/cc-by-nc.png" alt="logo deltion"></eleventy-image>
         <p slot="copy"><span @html="getYear()"></span> &copy Deltion ICT - Software Development<br>
-            Dit werk valt onder een <a href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Naamsvermelding - NietCommercieel 4.0 internationaal-licentie</a>.
+            Dit werk valt onder een <a href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons
+                Naamsvermelding - NietCommercieel 4.0 internationaal-licentie</a>.
         </p>
     </footer>
     <script type="module" @raw="getBundle('js')" webc:keep defer></script>

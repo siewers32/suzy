@@ -1,6 +1,0 @@
-{
-	"layout":"article.webc",
-	"tags":"ontwikkelomgeving",
-	"coursetitle":"Ontwikkelomgeving",
-	"permalink":"/ontwikkelomgeving/{{ title | slugify }}/{{ page.index }}"
-}

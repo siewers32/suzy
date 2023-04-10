@@ -1,0 +1,6 @@
+{
+	"layout":"assignment.webc",
+	"tags":"scrum",
+	"coursetitle":"Scrum",
+	"permalink":"/subjects/scrum/{{ title | slugify }}/{{ page.index }}"
+}
