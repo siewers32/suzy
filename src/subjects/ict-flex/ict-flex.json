@@ -1,0 +1,6 @@
+{
+	"layout":"assignment.webc",
+	"tags":"ict-flex",
+	"coursetitle":"ICT Flex",
+	"permalink":"/subjects/ict-flex/{{ title | slugify }}/{{ page.index }}"
+}

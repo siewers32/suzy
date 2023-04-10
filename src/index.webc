@@ -77,5 +77,13 @@ layout: layout.webc
             <tech color="yellow" title="Oriëntatie Blockchain"></tech>
         </p>
     </module>
-
+    <module>
+        <p slot="title">Thema</p>
+        <p slot="techs">
+            <tech color="yellow" title="ICT-flex"></tech>
+            <tech color="yellow" title="Hosting"></tech>
+            <tech color="purple" title="Security"></tech>
+        </p>
+    </module>
+    <module></module> <!-- uitlijning flexboxelementen -->
 </module-container>

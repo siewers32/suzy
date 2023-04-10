@@ -1,0 +1,6 @@
+{
+	"layout":"assignment.webc",
+	"tags":"hosting",
+	"coursetitle":"Hosting",
+	"permalink":"/subjects/hosting/{{ title | slugify }}/{{ page.index }}"
+}
