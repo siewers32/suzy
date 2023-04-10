@@ -6,9 +6,5 @@
     {
         "url": "/authors/",
         "name": "Auteurs"
-    },
-    {
-        "url": "/thema/introductie/",
-        "name": "Thema"
     }
 ]
