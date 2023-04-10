@@ -1,0 +1,6 @@
+{
+	"layout":"assignment.webc",
+	"tags":"c-objectoriented",
+	"coursetitle":"C# Objectoriënted",
+	"permalink":"/subjects/c-objectoriented/{{ title | slugify }}/{{ page.index }}"
+}

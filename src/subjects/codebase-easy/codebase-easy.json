@@ -1,6 +1,0 @@
-{
-	"layout":"assignment.webc",
-	"tags":"codebase-easy",
-	"coursetitle":"Codebase easy",
-	"permalink":"/subjects/codebase-easy/{{ title | slugify }}/{{ page.index }}"
-}

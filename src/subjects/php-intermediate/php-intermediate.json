@@ -1,0 +1,6 @@
+{
+	"layout":"assignment.webc",
+	"tags":"php-intermediate",
+	"coursetitle":"PHP Intermediate",
+	"permalink":"/subjects/php-intermediate/{{ title | slugify }}/{{ page.index }}"
+}

@@ -9,10 +9,19 @@ layout: layout.webc
         <p slot="techs">
             <tech color="purple" title="Ontwikkelomgeving"></tech>
             <tech color="purple" title="Git en Github"></tech>
-            <tech color="grey" title="Codebase easy"><img webc:is="eleventy-image" src='./src/_assets/red_pepper.svg'
-                    alt='red pepper'></tech>
-            <tech color="blue" title="Basis php"></tech>
-            <tech color="blue" title="Python"></tech>
+            <tech color="grey" title="Codebase S">
+                <img webc:is="eleventy-image" src='./src/_assets/red_pepper.svg' alt='red pepper'>
+            </tech>
+            <tech color="grey" title="Codebase M">
+                <img webc:is="eleventy-image" src='./src/_assets/red_pepper.svg' alt='red pepper'>
+                <img webc:is="eleventy-image" src='./src/_assets/red_pepper.svg' alt='red pepper'>
+            </tech>
+            <tech color="grey" title="Codebase XL">
+                <img webc:is="eleventy-image" src='./src/_assets/red_pepper.svg' alt='red pepper'>
+                <img webc:is="eleventy-image" src='./src/_assets/red_pepper.svg' alt='red pepper'>
+                <img webc:is="eleventy-image" src='./src/_assets/red_pepper.svg' alt='red pepper'>
+            </tech>
+            <tech color="blue" title="PHP Basis"></tech>
             <tech color="blue" title="Database queries"></tech>
         </p>
     </module>
@@ -21,16 +30,17 @@ layout: layout.webc
         <p slot="techs">
             <tech color="orange" title="HTML"></tech>
             <tech color="orange" title="CSS"></tech>
-            <tech color="green" title="Basis javascript"></tech>
-            <tech color="green" title="Vue (cdn)"></tech>
+            <tech color="green" title="Javascript basis"></tech>
+            <tech color="green" title="Javascript Vue"></tech>
             <tech color="yellow" title="User interfaces design"></tech>
+            <tech color="blue" title="PHP Intermediate"></tech>
         </p>
     </module>
     <module>
         <p slot="title">Frontend development</p>
         <p slot="techs">
+            <tech color="green" title="Javascript Vue"></tech>
             <tech color="green" title="Webcomponents"></tech>
-            <tech color="green" title="Vue (npm)"></tech>
             <tech color="pink" title="React Native"></tech>
             <tech color="yellow" title="User experience design"></tech>
         </p>
@@ -38,15 +48,16 @@ layout: layout.webc
     <module>
         <p slot="title">Object georiënteerd programmeren</p>
         <p slot="techs">
-            <tech color="blue" title="OO PHP"></tech>
-            <tech color="blue" title="C#"></tech>
+            <tech color="blue" title="PHP Objectoriënted"></tech>
+            <tech color="blue" title="C#" Objectoriënted></tech>
         </p>
     </module>
     <module>
         <p slot="title">Frameworks (MVC) en API</p>
         <p slot="techs">
-            <tech color="blue" title="Laravel"></tech>
-            <tech color="green" title="NodeJS"></tech>
+            <tech color="blue" title="PHP MVC"></tech>
+            <tech color="green" title="JS MVC"></tech>
+            <tech color="green" title="C# MVC"></tech>
         </p>
     </module>
     <module>
@@ -56,6 +67,7 @@ layout: layout.webc
             <tech color="yellow" title="UML"></tech>
             <tech color="purple" title="DevOps"></tech>
             <tech color="purple" title="Projecten"></tech>
+            <tech color="purple" title="Database ontwerp"></tech>
         </p>
     </module>
     <module>

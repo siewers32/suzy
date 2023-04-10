@@ -1,0 +1,6 @@
+{
+	"layout":"assignment.webc",
+	"tags":"c-mvc",
+	"coursetitle":"C# MVC",
+	"permalink":"/subjects/c-mvc/{{ title | slugify }}/{{ page.index }}"
+}

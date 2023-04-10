@@ -217,14 +217,12 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("./src/_assets/_system");
 
     eleventyConfig.addShortcode("video", (yt_id) => {
-        const filePath = path.join(__dirname, "./src/_includes/video.njk");
-        // If the file doesn't exist, render nothing.
-        if (!fs.existsSync) {
-            return "";
-        }
-        // If the file does exist, read it.
-        const content = fs.readFileSync(filePath).toString();
-        return nunjucks.renderString(content, {video: yt_id});
+        return `<div class="video-wrapper">
+            <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen frameborder="0" height="auto"
+                src="https://www.youtube.com/embed/${yt_id}">
+            </iframe>
+        </div>`
     });
 
     return {

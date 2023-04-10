@@ -1,6 +1,0 @@
-{
-	"layout":"assignment.webc",
-	"tags":"laravel",
-	"coursetitle":"Laravel",
-	"permalink":"/subjects/laravel/{{ title | slugify }}/{{ page.index }}"
-}

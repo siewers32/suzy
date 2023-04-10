@@ -1,6 +1,0 @@
-{
-	"layout":"assignment.webc",
-	"tags":"nodejs",
-	"coursetitle":"NodeJS",
-	"permalink":"/subjects/nodejs/{{ title | slugify }}/{{ page.index }}"
-}
