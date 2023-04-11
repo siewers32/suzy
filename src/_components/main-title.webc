@@ -1,5 +1,6 @@
-    <div class="category">
-        <slot name="category">Frontend</slot>
+<script webc:type="js">
+    ` <div class="category">
+        <a href="${ref}"><slot name="category">Frontend</slot></a>
     </div>
     <div class="authors">
         <slot name="authors">Jan Jaap Siewers</slot> |
@@ -7,7 +8,8 @@
     </div>
     <div class="title">
         <h1><slot name="title">Title</slot></h1>
-    </div>
+    </div>`
+</script>
 
 <style webc:scoped>
     :host {
@@ -19,11 +21,14 @@
         font-weight: bold;
     }
 
+    div.category a {
+        text-decoration: none;
+    }
+
     div.authors {
         text-align: right;
         font-style: italic;
         font-size: 0.9rem;
 
     }
-
 </style>

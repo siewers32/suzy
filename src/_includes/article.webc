@@ -2,7 +2,7 @@
 layout: layout.webc
 ---
 
-<main-title>
+<main-title :ref="url('/subjects/' + slugify(coursetitle)) + '/introductie/'">
     <div slot="title" @html="title"></div>
     <p slot="category" @html="coursetitle"></p>
     <span slot="authors" @html="getAuthors(authors,author)"></span>
