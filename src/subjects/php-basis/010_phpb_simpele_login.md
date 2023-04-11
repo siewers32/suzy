@@ -1,5 +1,5 @@
 ---
-title: PHPB Simpele login
+title: Simpele login
 key: 1417
 difficulty: basic
 date: 2022-10-01
@@ -7,7 +7,14 @@ author: jsiewers
 technology: php, html
 ---
 
+> #### Voorkennis
+> * Basiskennis HTML
+> * PHP Arrays en superglobals $_POST en $_GET
 
+> #### Dit ga je leren
+> * Basiskennis PHP
+> * Gebruik maken van condities (if..else)
+> * Uitvoer van PHP weergeven in HTML
 
 
 ## Resultaat
@@ -21,5 +28,5 @@ technology: php, html
 
 ## Activity diagram
 
-![schema_loginform]({{ '/_assets/backend/schema_loginform.svg' | url }})
 
+{{ '/_assets/backend/schema_loginform.svg' | url | image: 'schema loginform', 100 }}

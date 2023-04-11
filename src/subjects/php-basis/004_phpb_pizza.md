@@ -1,5 +1,5 @@
 ---
-title: PHPB Pizza
+title: Pizza
 key: 1416
 difficulty: basic
 date: 2022-11-20
@@ -7,7 +7,15 @@ author: jsiewers
 technology: html, php
 ---
 
+> #### Voorkennis
+> * Basiskennis HTML
+> * PHP Arrays en superglobals $_POST en $_GET
 
+> #### Dit ga je leren
+> * Basiskennis PHP
+> * Berekeningen maken met PHP
+> * Gebruik maken van condities (if..else)
+> * Uitvoer van PHP weergeven in HTML
 
 
 ## Resultaat

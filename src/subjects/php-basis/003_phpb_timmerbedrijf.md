@@ -1,5 +1,5 @@
 ---
-title: PHPB Timmerbedrijf
+title: Timmerbedrijf
 key: 1403
 difficulty: basic
 date: 2022-11-20
@@ -8,6 +8,13 @@ technology: html, php
 ---
 
 
+> #### Voorkennis
+> * Basiskennis HTML
+> * PHP Arrays en superglobals $_POST en $_GET
+
+> #### Dit ga je leren
+> * Uitvoer van PHP weergeven in HTML
+> * Berekeningen maken met PHP
 
 
 ## Resultaat

@@ -1,5 +1,5 @@
 ---
-title: PHPB Loops
+title: Loops
 key: 1418
 difficulty: basic
 date: 2022-11-10
@@ -9,10 +9,13 @@ technology: php
 
 
 
-
-> ##### Voorkennis
+> #### Voorkennis
 > * Basiskennis HTML
 > * Programmeertaal: PHP
+
+> #### Dit ga je leren
+> * Basiskennis PHP
+> * Een loop maken met PHP
 
 ## Resultaat
 Je kunt de tafel van 1247 en een reeks afbeeldingen tonen in je browser.

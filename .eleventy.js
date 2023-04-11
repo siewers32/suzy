@@ -34,7 +34,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPlugin(eleventyImagePlugin, {
 		// Set global default options
 		formats: ["webp", "jpeg", "svg"],
-		urlPath: "/_assets/_generated/",
+		urlPath: "/_img/",
         svgShortCircuit: true,
         svgAllowUpscale: true,
 
@@ -207,14 +207,17 @@ module.exports = function(eleventyConfig) {
         return `<img src="${url}" alt="${alt}" style="width:${size}%;">`;  
     })
 
- 
+    eleventyConfig.addFilter("eleventyimage", function(url, alt, size){
+        return `<eleventy-image src="${eleventyConfig.getFilter("url")(url)}" alt="${alt}" style="width:${size}%;">`;  
+    })
+
     eleventyConfig.addPlugin(syntaxHighlight);
     
     // eleventyConfig.addPassthroughCopy("./src/_css");
     eleventyConfig.addPassthroughCopy("./src/_assets");
     // eleventyConfig.addPassthroughCopy("./src/_js");
     eleventyConfig.addPassthroughCopy("./manifest.webmanifest");
-    eleventyConfig.addPassthroughCopy("./src/_assets/_system");
+    eleventyConfig.addPassthroughCopy("./src/_system");
 
     eleventyConfig.addShortcode("video", (yt_id) => {
         return `<div class="video-wrapper">

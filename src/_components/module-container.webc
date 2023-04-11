@@ -4,6 +4,11 @@
     :host {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: flex-start;
+    }
+
+    :host::after {
+        content: '';
+        flex: 0 0 245px;
     }
 </style>

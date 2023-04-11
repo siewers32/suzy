@@ -1,5 +1,5 @@
 ---
-title: Imagegallery functions
+title: Image gallery functions
 key: 2550
 difficulty: basic
 date: 2023-03-24
@@ -19,12 +19,12 @@ technology: php
 
 ## Opdracht
 Je gaat een gallery maken met afbeeldingen in php zoals in [dit voorbeeld](https://by9sfe.csb.app/)
-Je mag zelf bepalen welke afbeeldingen je gebruikt.
-Gebruik een image-editor (paint.net of photoshop) om de van de afbeeldingen een uitsnede te maken en op te slaan in een geschikt formaat. (bijv. 300 x 400 px.).
+Je mag zelf bepalen welke afbeeldingen je gebruikt.  
+Gebruik een image-editor (paint.net of photoshop) om van de afbeeldingen een uitsnede te maken en op te slaan in een geschikt formaat. (bijv. 300 x 400 px.).
 
 
 1. Maak een map 'images' met daarin de afbeeldingen.
-2. Maak php-pagina met daarin een functie waarin de paden van alle afbeeldingen in de map worden verzameld in een array. Bijvoorbeeld met [scandir](https://www.php.net/manual/en/function.scandir.php) of [glob](https://www.php.net/manual/en/function.glob.php).
+2. Maak een php-pagina met daarin een functie waarin de paden van alle afbeeldingen in de map 'images' worden verzameld in een array. Bijvoorbeeld met [scandir](https://www.php.net/manual/en/function.scandir.php) of [glob](https://www.php.net/manual/en/function.glob.php).
 3. Maak in diezefde functie een lus waarbij de array met image-paden wordt doorlopen
 4. Combineer de paden met html zodat de afbeeldingen worden weergegeven. 
 5. Geef de complete html-code terug uit de functie
@@ -42,14 +42,21 @@ Gebruik een image-editor (paint.net of photoshop) om de van de afbeeldingen een 
 Signatuur van de functie:
 ```php
 <?php
-   
+   /*
+   * @param array $map
+   * @return string
+   * 
+   * /
    function showPictures($map) {
-      
-      // code om afbeeldingen in '$map' weer te geven
+
+      // code om alle afbeeldingen in $map toe te voegen aan een array
+      // foreach-loop met code om afbeeldingen in '$map' weer te geven
       
       return $html;
    }
+
    $result = function showPictures("/map/afbeeldingen/")
+ 
  <html> 
    <body>
        <?php echo $result; ?>
@@ -57,6 +64,17 @@ Signatuur van de functie:
 </html>
 ```
 
+Output:
+```html
+ <html> 
+   <body>
+      <img class="image-class" src="/path/to/image1.png" alt="image image1.png">
+      <img class="image-class" src="/path/to/image2.png" alt="image image2.png">
+      <img class="image-class" src="/path/to/image3.png" alt="image image3.png">
+      ...
+   </body> 
+</html>
+```
 
 ## Resultaat
 * Een php-pagina met daarin html-code en 1 php functie.

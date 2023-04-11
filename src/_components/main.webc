@@ -2,8 +2,10 @@
 
 <style webc:scoped>
     :host {
+        display: flex;
+        flex-direction: column;
         width: 80%;
-        margin: 2rem auto 0 auto;
-        flex-grow: 1;
+        margin: 1rem auto 2rem auto;
+        flex: 1 0 auto;
     }
 </style>

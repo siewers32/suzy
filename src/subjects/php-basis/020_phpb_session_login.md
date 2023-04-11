@@ -1,5 +1,5 @@
 ---
-title: PHPB Sessie login
+title: Sessie login
 key: 1408
 difficulty: basic
 date: 2022-10-10
@@ -7,6 +7,16 @@ author: jsiewers
 technology: html, php
 ---
 
+> #### Voorkennis
+> * Basiskennis HTML
+> * PHP Arrays en superglobals $_POST en $_GET
+> * PHP Sessions
+
+> #### Dit ga je leren
+> * Basiskennis PHP
+> * Sessievariabelen toepassen
+> * Gebruik maken van condities (if..else)
+> * Uitvoer van PHP weergeven in HTML
 
 
 
@@ -21,4 +31,5 @@ technology: html, php
 Als gebruiker wil ik kunnen inloggen zodat ik toegang krijg tot de content van de website.
 
 ## Activity diagram
-![sessionlogin]({{ '/_assets/backend/session_login.svg' | url }})
+
+{{ '/_assets/backend/session_login.svg' | url | image: 'session login', 100 }}

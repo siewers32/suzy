@@ -8,6 +8,13 @@ technology: dbq
 ---
 
 
+> #### Voorkennis
+> * Basiskennis SQL
+> * Programmeertaal: PHP
+
+> #### Dit ga je leren
+> * Basiskennis PHP
+> * Een loop maken met PHP
 
 
 ## Casus

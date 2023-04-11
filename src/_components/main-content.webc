@@ -1,29 +1,27 @@
-<div class="wrapper">
-    <div class="sidebar">
-        <slot name="sidebar"></slot>
-    </div>
-    <div class="content"><slot name="content"></slot></div>    
+<div class="sidebar">
+    <slot name="sidebar"></slot>
+</div>
+<div class="content">
+    <slot name="content"></slot>
 </div>
 
-
-<style>
-    div.wrapper {
+<style webc:scoped>
+    :host {
         display: flex;
-        justify-content:flex-start;
+        justify-content: flex-start;
     }
 
     div.sidebar {
-        width:300px;
-        min-width:300px;
+        flex: 0 0 300px;
     }
 
     div.content {
-        width:100%
+        flex: 1 0 0;
     }
 
     @media only screen and (max-width: 600px) {
-    div.wrapper {
-        flex-direction: column;
+        :host {
+            flex-direction: column;
+        }
     }
-}
 </style>

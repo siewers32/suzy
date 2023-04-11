@@ -1,4 +1,3 @@
-<div class="template">
     <div class="category">
         <slot name="category">Frontend</slot>
     </div>
@@ -7,16 +6,12 @@
         <slot name="date">Mar, 2023</slot>
     </div>
     <div class="title">
-        <h1>
-            <slot name="title">Title</slot>
-        </h1>
+        <h1><slot name="title">Title</slot></h1>
     </div>
-</div>
 
-<style>
-    div.template {
-        margin-top: 1rem;
-        margin-bottom: 2rem;
+<style webc:scoped>
+    :host {
+        margin: 0 0 2rem 0;
     }
 
     div.category {
@@ -27,5 +22,8 @@
     div.authors {
         text-align: right;
         font-style: italic;
+        font-size: 0.9rem;
+
     }
+
 </style>

@@ -1,5 +1,5 @@
 ---
-title: PHPB Functions
+title: Functions in PHP
 key: 1409
 difficulty: basic
 date: 2022-11-10
@@ -8,11 +8,13 @@ technology: php
 ---
 
 
+> #### Voorkennis
+> * Basiskennis PHP
+> * Kennis over het maken en toepassen van functies in PHP
 
-
-> ##### Voorkennis
-> * Basiskennis HTML
-> * Programmeertaal: PHP
+> #### Dit ga je leren
+> * Berekeningen maken met PHP
+> * Herbruikbare code maken met behulp van functies in PHP
 
 ## Resultaat
 Je hebt geleerd hoe je functions maakt en toepast in php. In de opdrachten op deze pagina laat je zien hoe je functies definieert en hoe je ze aanroept.
@@ -28,7 +30,9 @@ berekenCijfer(34, 31) //Output is 9,12
 ```
 ### Opdracht 2
 Maak een functie die 1 getal accepteert. De functie bepaalt of het getal deelbaar is door 3 en door 5. Bijv. 15 is deelbaar door 3 en 5. De functie toont het resultaat.  
+
 TIP: Maak gebruik van de modulus-operator  
+
 ```php
 checkDeelbaar(15) //Output "Deelbaar door 3 en door 5"  
 checkDeelbaar(9) //Output "Deelbaar door 3 maar niet door 5"  
@@ -36,4 +40,4 @@ checkDeelbaar(10) //Output "Deelbaar door 5 maar niet door 3"
 checkDeelbaar(17) //Output "Niet deelbaar door 3 of 5"  
 ```
 
-> TIP: [Uitleg over functions vind je hier](https://www.edutorial.nl/php/functions/)
+TIP: [Uitleg over functions vind je hier](https://www.edutorial.nl/php/functions/)

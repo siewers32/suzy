@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suzy</title>
-    <link webc:keep rel="icon" :href=url("/_system/favicon.ico") sizes="any"><!-- 32×32 -->
+    <link webc:keep rel="icon" :href=url("/_system/favicon.ico") type="image/png><!-- 32×32 -->
     <link rel="icon" :href=url("/_system/icon.svg") type="image/svg+xml">
     <link rel="apple-touch-icon" :href=url("/_system/apple-touch-icon.png")><!-- 180×180 -->
     <link rel="manifest" :href=url("/manifest.webmanifest")>

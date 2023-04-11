@@ -1,5 +1,5 @@
 ---
-title: PHPB Database login
+title: Database login
 key: 1414
 difficulty: medium
 date: 2022-11-10
@@ -8,7 +8,16 @@ technology: php, html, dbq
 ---
 
 
+> #### Voorkennis
+> * Basiskennis HTML
+> * Programmeertaal: PHP
+> * Basiskennis SQL queries
 
+> #### Dit ga je leren
+> * Basiskennis PHP
+> * Sessievariabelen toepassen
+> * Gebruik maken van condities (if..else)
+> * Een database maken met tabellen en queries toepassen
 
 ## Resultaat
 * Een login-systeem met een formulier waar je een naam en een wachtwoord in kunt vullen.
@@ -21,5 +30,4 @@ technology: php, html, dbq
 
 ## Activity diagram
 
-![schema_loginform]({{ '/_assets/backend/schema_db_login.svg' | url }})
-
+{{ '/_assets/backend/schema_db_login.svg' | url | image: 'schema loginform', 100 }}

@@ -1,25 +1,34 @@
-<div>
-    <a href="/"><slot name="logo">Logootje</slot></a>
-    <div class="links">
-        <slot name="links">
-            links
-        </slot>
-    </div>
+<a href="/">
+    <slot name="logo">Logootje</slot>
+</a>
+<div class="links">
+    <slot name="links">
+        links
+    </slot>
 </div>
 
 <style webc:scoped>
     :host {
-        width: 80%;
-        margin: auto;
-    }
-
-    div {
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
+        width: 80%;
+        margin: 8px auto 0 auto;
     }
 
     div.links {
         display: block;
         text-align: right;
+    }
+
+
+    @media only screen and (max-width: 400px) {
+        :host {
+            flex-direction: column;
+        }
+
+        div.links {
+            text-align:center;
+        }
     }
 </style>

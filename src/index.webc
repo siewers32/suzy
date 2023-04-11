@@ -9,18 +9,9 @@ layout: layout.webc
         <p slot="techs">
             <tech color="purple" title="Ontwikkelomgeving"></tech>
             <tech color="purple" title="Git en Github"></tech>
-            <tech color="grey" title="Codebase S">
-                <img webc:is="eleventy-image" src='./src/_assets/red_pepper.svg' alt='red pepper'>
-            </tech>
-            <tech color="grey" title="Codebase M">
-                <img webc:is="eleventy-image" src='./src/_assets/red_pepper.svg' alt='red pepper'>
-                <img webc:is="eleventy-image" src='./src/_assets/red_pepper.svg' alt='red pepper'>
-            </tech>
-            <tech color="grey" title="Codebase XL">
-                <img webc:is="eleventy-image" src='./src/_assets/red_pepper.svg' alt='red pepper'>
-                <img webc:is="eleventy-image" src='./src/_assets/red_pepper.svg' alt='red pepper'>
-                <img webc:is="eleventy-image" src='./src/_assets/red_pepper.svg' alt='red pepper'>
-            </tech>
+            <tech color="grey" title="Codebase S"></tech>
+            <tech color="grey" title="Codebase M"></tech>
+            <tech color="grey" title="Codebase XL"></tech>
             <tech color="blue" title="PHP Basis"></tech>
             <tech color="blue" title="Database queries"></tech>
         </p>
@@ -85,5 +76,4 @@ layout: layout.webc
             <tech color="purple" title="Security"></tech>
         </p>
     </module>
-    <module></module> <!-- uitlijning flexboxelementen -->
 </module-container>

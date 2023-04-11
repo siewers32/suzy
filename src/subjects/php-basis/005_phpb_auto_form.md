@@ -1,5 +1,5 @@
 ---
-title: PHPB Autoformulier
+title: Autoformulier
 key: 1406
 difficulty: basic
 date: 2022-11-10
@@ -8,12 +8,13 @@ technology: php
 ---
 
 
-
-
-> ##### Voorkennis
+> #### Voorkennis
 > * Basiskennis HTML
-> * Programmeertaal: PHP
+> * Formulier maken met HTML
 
+> #### Dit ga je leren
+> * Basiskennis PHP
+> * Ingevulde waarden in een formulier bewerken en weergeven met PHP
 
 ## Resultaat
 Een formulier waarbij je kunt kiezen uit minimaal 5 automerken (of games of tandpasta of ander onderwerp).  
