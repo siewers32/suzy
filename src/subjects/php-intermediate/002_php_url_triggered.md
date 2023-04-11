@@ -21,19 +21,52 @@ technology: ide, html, css
 ## Opdracht
 1. Maak een index-file en een map 'content'.
 
+```shell
+website
+ |-- content
+ |-- index.php
+```
+
 2. Maak tenminste twee files in de map content, bijvoorbeeld: 'home' en 'bla'.
 Geef beide files in ieder geval een titel als inhoud, bijv:  `<h1>Home</h1>`
 
-3. Zet in de index-file ankers die verwijzen naar de index-file, maar voeg een query-string toe. 
-Bijvoorbeeld: 
-   * `<a href="index.php?controller=home">home</a>`
-   * `<a href="index.php?controller=bla">bla</a>`
-4. Zorg ervoor dat de get-waarden worden opgepakt uit de url en dat deze worden gebruikt om één van de
-content-files in te lezen. Let op! Als er geen query-string is in de url (1e maal site bezoeken; get-controller is empty), wat doe je dan?!
-5. Voer de logica uit voor get html-tag, maar toon de opgevraagde content wel in de article tag.
+```shell
+website
+ |-- content
+     |-- home.php
+     |-- bla.php
+ |-- index.php
+```
+
+3. Zet in de index-file ankers die verwijzen naar de index-file, maar voeg een query-string toe.  
+
+
+```php
+
+<?php
+   // php-code komt hier!
+?>
+<!DOCTYPE html>
+<html lang="en">
+<body>
+  <a href="index.php?controller=home">home</a> | 
+  <a href="index.php?controller=bla">bla</a>
+  <article>
+      <?php
+         // gerenderde output komt hier!
+      ?>
+  </article>
+</body>
+</html>
+
+```
+4. Gebruik de `$_GET` superglobal om de bestanden in de map content in te voegen in `index.php` (file-inclusion).
+   * Let op! Als er geen query-string is in de url (1e maal site bezoeken; get-controller is empty), wat doe je dan?!
+   * Het invoegen van externe bestanden is onveilig. Waar om eigenlijk? [Maak je code veiliger door gebruik te maken van een whitelist](https://medium.com/purple-team/exploiting-local-file-inclusion-vulnerabilities-37a66702c17b).
+5. Voer de logica uit voor de html-tag, maar toon de opgevraagde content wel in de article tag.
    Gebruik bijvoorbeeld een functie zoals 'file_get_contents'.
 
-6. Contrleer of het menu de juiste content toont.
+6. Controleer of de juiste content wordt getoond.
 
 Mooi als dit werkt, maar er zijn geen functies gebruikt.
 
@@ -45,7 +78,9 @@ Mooi als dit werkt, maar er zijn geen functies gebruikt.
 if( empty($_GET['controller'])) { 
 	$_GET['controller'] = 'home';
 }
+
 include( 'content/'.$_GET['controller'].'.php' );
+
 $function = $_GET['controller']; 
 $render = $function();
 
@@ -55,8 +90,7 @@ $render = $function();
    </article>
 </html>
 ```
-9. Maak het opvragen van content op basis van menu-items weer compleet werkend, waarbij alles in functies is geplaatst. 
-Ook het stukje code dat ervoor zorgt dat de content wordt aangeroepen. 
+9. Maak het opvragen van content op basis van menu-items compleet werkend, waarbij alles in functies is geplaatst. Ook het stukje code dat ervoor zorgt dat de content wordt aangeroepen. 
 
 ## Resultaat
 * Een werkend menu, dat content ophaalt uit een specifiek bestand en de functie aanroept die daar in staat.

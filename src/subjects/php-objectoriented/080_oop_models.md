@@ -1,5 +1,5 @@
 ---
-title: OOP Een database model maken
+title: Een database model maken
 key: 2521
 difficulty: basic
 date: 2023-01-01
@@ -17,10 +17,11 @@ technology: oop
 > * Je gaat herbruikbare code leren schrijven
 > * Je gaat overerving van klassen toepassen
 
-## Opdracht Models
+## Introductie
 Een model is een term die vaker wordt gebruikt als het gaat om objecten en klassen die met een database te maken hebben.  
 Als je een applicatie bouwt met een database, dan merk je dat je veel code makkelijk kunt hergebruiken. Het opvragen van alle users of juist 1 user is code die je in veel applicaties tegenkomt. Een database-model is een klassse die het werken met een database eenvoudiger maakt en het herhalen van code voorkomt.
 
+## Opdracht
 In deze opdracht ga je een algemene klasse maken die met een database kan communiceren. Daarna ga je gebruik maken van 'overerving' om subklasses te maken voor verschillende tabellen in de database.
 * [Fork de repository Database models](https://github.com/DeltionICT/databasemodel/fork) 
 * Clone de repository naar je eigen laptop
@@ -36,8 +37,7 @@ In deze opdracht ga je een algemene klasse maken die met een database kan commun
 * Gebruik MovieModel om alle movies weer te geven
 * Maak een formulier om nieuwe movies toe te kunnen voegen
 
-
-# Resultaat
+## Resultaat
 Voeg je veranderingen toe aan de repository
 Commit en push je aanpassingen naar github
 

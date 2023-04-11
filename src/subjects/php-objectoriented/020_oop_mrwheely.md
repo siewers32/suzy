@@ -1,5 +1,5 @@
 ---
-title: OOP MrWheely
+title: MrWheely's occasions
 key: 2519
 difficulty: basic
 date: 2023-01-01
@@ -41,16 +41,18 @@ Voor autobedrijf 'Mr. Wheely' moet een app worden gebouwd waarmee je het aanbod 
 Gebruik onderstaande code om een aantal auto's toe te voegen aan een AutoOverzicht.
 
 ```php
-$ao->add(new Auto("BMW", "316", "rood", 27500);
-$ao->add(new Auto("Audi", "A8", "blauw", 37000);
-$ao->add(new Auto("Mercedes", "C200", "grijs", 41000);
-$ao->add(new Auto("Ford", "Mondeo", "zwart", 18700);
-$ao->add(new Auto("Ford", "Focus", "paars", 14300);
-$ao->add(new Auto("Volkswagen", "Tiguan", "groen", 22500);
+$ao->add(new Auto("BMW", "316", "rood", 27500));
+$ao->add(new Auto("Audi", "A8", "blauw", 37000));
+$ao->add(new Auto("Mercedes", "C200", "grijs", 41000));
+$ao->add(new Auto("Ford", "Mondeo", "zwart", 18700));
+$ao->add(new Auto("Ford", "Focus", "paars", 14300));
+$ao->add(new Auto("Volkswagen", "Tiguan", "groen", 22500));
 ```
 Voeg nieuwe methoden toe aan de AutoOverzicht-class en/of aan de Auto-class om de onderstaande functionaliteit te realiseren.
 
 [Uitleg over deze opdracht vind je op edutorial.nl](https://www.edutorial.nl/php2/oo-programmeren/)
+
+{% video "playlist?list=PLBtXOV0WuE_FyhyCJ3KZCprpzAaexwEnr" %}
 
 ## Resultaat
 * [Zie hier een voorbeeld van de website van 'Mr Wheely'](https://static.edutorial.nl/oop/wheely/)

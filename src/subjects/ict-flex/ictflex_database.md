@@ -73,7 +73,7 @@ voorbeeld een salesdatabase gebruikt, waarin een tabel voor contacten
 wordt geplaatst. Op de database en de tabel worden voorbeeld wijzigingen
 gedaan.
 
-# Database aanmaken
+## Database aanmaken
 
 Een eerste stap is om een database aan te maken. De query hiervoor is
 vrij eenvoudig:

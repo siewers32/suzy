@@ -7,15 +7,17 @@ author: rkerssies
 technology: php
 ---
 
-<img src="{{ '/_assets/basis/functions.png' | url }}" style="width:10%;">
 
 > #### Voorkennis
 > * Basiskennis programmeren in php
-> 
+ 
 > #### Dit ga je leren
 > * Functies maken en gebruiken
 > * Parameters meegeven aan een functie
 > * Een waarde teruggeven uit een functie.
+
+{{ '/_assets/basis/functions.png' | url | image: 'functions', 10 }}
+
 
 ## Opdracht
 Je gaat een gallery maken met afbeeldingen in php zoals in [dit voorbeeld](https://by9sfe.csb.app/)
