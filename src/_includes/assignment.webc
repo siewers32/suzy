@@ -4,8 +4,7 @@ layout: article.webc
 
 <main-content>
     <ul slot="sidebar">
-        <list-link webc:for="item of postsAscending(collections[tags])" :href="item.url"
-            @html="item.data.title"></list-link>
+        <list-link webc:for="item of postsAscending(collections[tags])" :href="item.url" :page="page.url"  @html="item.data.title"></list-link>
     </ul>
     <div slot="content" @raw="content" webc:nokeep></div>
 </main-content>

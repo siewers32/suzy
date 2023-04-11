@@ -1,2 +1,32 @@
-<li><a :href="href"><slot></slot></a></li>
 
+<script webc:type="js">
+let selected = (href == page) ? "selected" : "notselected";
+
+ `<a href="${href}"><li class="${selected}"><slot></slot></li></a>`
+</script>
+
+<style webc:scoped>
+    :host {
+        list-style-type: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    li {
+        width:90%;
+        padding:2px 0px 2px 8px;
+        border-radius: 8px;
+        margin: 0 0 0.5rem 0;
+    }
+    li.selected {
+        background-color:var(--c-brand);
+        color: #fff;
+    }
+
+    li.notselected {
+        background-color:var(--c-header-bg);
+    }
+
+</style>

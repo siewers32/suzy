@@ -218,6 +218,7 @@ module.exports = function(eleventyConfig) {
     // eleventyConfig.addPassthroughCopy("./src/_js");
     eleventyConfig.addPassthroughCopy("./manifest.webmanifest");
     eleventyConfig.addPassthroughCopy("./src/_system");
+    //eleventyConfig.addPassthroughCopy("./src/favicon.ico");
 
     eleventyConfig.addShortcode("video", (yt_id) => {
         return `<div class="video-wrapper">
